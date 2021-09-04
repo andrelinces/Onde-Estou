@@ -16,6 +16,7 @@
 		D332BDE226E2D81500DA1DBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D332BDE026E2D81500DA1DBD /* LaunchScreen.storyboard */; };
 		D332BDED26E2D81500DA1DBD /* Onde_EstouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D332BDEC26E2D81500DA1DBD /* Onde_EstouTests.swift */; };
 		D332BDF826E2D81500DA1DBD /* Onde_EstouUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D332BDF726E2D81500DA1DBD /* Onde_EstouUITests.swift */; };
+		D332BE0726E2D96A00DA1DBD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D332BE0626E2D96A00DA1DBD /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D332BDF326E2D81500DA1DBD /* Onde EstouUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Onde EstouUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D332BDF726E2D81500DA1DBD /* Onde_EstouUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onde_EstouUITests.swift; sourceTree = "<group>"; };
 		D332BDF926E2D81500DA1DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D332BE0626E2D96A00DA1DBD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D332BE0726E2D96A00DA1DBD /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 				D332BDEB26E2D81500DA1DBD /* Onde EstouTests */,
 				D332BDF626E2D81500DA1DBD /* Onde EstouUITests */,
 				D332BDD026E2D81400DA1DBD /* Products */,
+				D332BE0526E2D96A00DA1DBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +133,14 @@
 				D332BDF926E2D81500DA1DBD /* Info.plist */,
 			);
 			path = "Onde EstouUITests";
+			sourceTree = "<group>";
+		};
+		D332BE0526E2D96A00DA1DBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D332BE0626E2D96A00DA1DBD /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
