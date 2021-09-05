@@ -9,10 +9,19 @@ import UIKit
 import MapKit
 //Adicionando classes necessárias para Mapa e localização.
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
-    
+    //criando referência do mapa.
     @IBOutlet weak var Mapa: MKMapView!
     //Instanciando o Objeto
     var gerenciadorLocalizacao = CLLocationManager()
+    
+    //criando referências das labels
+    @IBOutlet weak var velocidadeLabel: UILabel!
+    @IBOutlet weak var latitudeLabel: UILabel!
+    @IBOutlet weak var longitudeLabel: UILabel!
+    @IBOutlet weak var enderecoLabel: UILabel!
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +35,15 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         //Monitorando a localização do usuário
         gerenciadorLocalizacao.startUpdatingLocation()
         
+    }
+    //Atualizando a localização do usuário em tempo real
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        //criando variavel, localizacaoUsuario é um array com várias informações do usuário
+        var localizacaoUsuario = locations.last
         
     }
+    
 
     //Verificando se o usuário mudou de ideia e permitiu o acesso a sua localização
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {

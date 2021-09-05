@@ -109,6 +109,10 @@
                     </view>
                     <connections>
                         <outlet property="Mapa" destination="xpc-sQ-kxy" id="Otq-IC-p8o"/>
+                        <outlet property="enderecoLabel" destination="BQi-wx-7Pc" id="YDP-Jl-7hk"/>
+                        <outlet property="latitudeLabel" destination="Czm-MZ-SeQ" id="voV-Hq-RHo"/>
+                        <outlet property="longitudeLabel" destination="GjX-lT-IyN" id="uVg-Lh-8FO"/>
+                        <outlet property="velocidadeLabel" destination="HBg-YG-93l" id="MuN-1e-dbJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
